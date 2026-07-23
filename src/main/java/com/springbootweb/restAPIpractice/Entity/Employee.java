@@ -1,6 +1,7 @@
 package com.springbootweb.restAPIpractice.Entity;
 
 import com.springbootweb.restAPIpractice.Annotations.PrimeValidation;
+import com.springbootweb.restAPIpractice.Annotations.passwordvalidater;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
@@ -27,6 +28,8 @@ public class Employee {
     private Long salary;
 @PrimeValidation
     private Long age;
+@passwordvalidater
+private String password;
 
 
 

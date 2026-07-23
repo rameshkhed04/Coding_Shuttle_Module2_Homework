@@ -13,4 +13,5 @@ public class GlobalExecptionHandler {
     public ResponseEntity<String> resourcesnotfound(NoSuchElementException exception){
         return new ResponseEntity<>("Resource not found", HttpStatus.NOT_FOUND);
     }
+
 }
